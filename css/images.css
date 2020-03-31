@@ -1,0 +1,39 @@
+#side-image1 {
+    background-image: url("../img/lucky.jpg");
+}
+
+#card-image1 {
+    background-image: url("../img/cards/card1.jpg");
+}
+
+#card-image2 {
+    background-image: url("../img/cards/card2.jpg");
+}
+
+#card-image3 {
+    background-image: url("../img/cards/card3.jpg");
+}
+
+#blog-image1 {
+    background-image: url("../img/blog-entries/blog1.jpg");
+}
+
+#blog-image2 {
+    background-image: url("../img/blog-entries/blog2.jpg");
+}
+
+#blog-image3 {
+    background-image: url("../img/blog-entries/blog3.jpg");
+}
+
+#facebook {
+    background-image: url("../img/social/facebook.png");
+}
+
+#twitter {
+    background-image: url("../img/social/twitter.png");
+}
+
+#linkedin {
+    background-image: url("../img/social/linkedin.png");
+}

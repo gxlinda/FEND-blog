@@ -1,0 +1,85 @@
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 1ft);
+    grid-template-areas: "ch ch ch" "pic bt bt" "cf cf cf";
+    grid-gap: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 0.8em;
+    background-color: #fff;
+}
+
+.card-header {
+    grid-area: ch;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    grid-area: pic;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+
+.blog-text {
+    grid-area: bt;
+}
+
+.card-footer {
+    grid-area: cf;
+    position: relative;
+    left: 70%;
+}
+
+.blog-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1ft);
+    grid-template-areas: "ch ch ch" "bpic bpic bpic" "bet bet bet" "soc soc btn";
+    grid-gap: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 0.8em;
+    background-color: #fff;
+}
+
+.blog-image {
+    grid-area: bpic;
+    width: auto;
+    height: 450px;
+    background-size: cover;
+    margin: 1em 0 1em 0;
+}
+
+.blog-entry-text {
+    grid-area: bet;
+    margin: 0 0 1em 0;
+}
+
+.blog-social {
+    grid-area: soc;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-size: contain;
+}
+
+.social-icon:hover {
+    width: 55px;
+    height: 55px;
+}
+
+.blog-button {
+    grid-area: btn;
+    background-image: linear-gradient(to bottom right, #06c, #0cf);
+    color: #fff;
+    border-radius: 8px;
+    padding: 0.5em;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}

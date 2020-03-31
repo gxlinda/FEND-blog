@@ -1,0 +1,214 @@
+    @import "./sidebar.css";
+    @import "./images.css";
+    @import "./blog-cards.css";
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: rgb(228, 225, 225);
+        color: rgb(107, 107, 107);
+    }
+    
+    h1 {
+        font-size: 70px;
+        font-family: 'Rochester', cursive;
+        padding: 0px;
+        margin: 5px;
+    }
+    
+    h2 {
+        font-size: 50px;
+        font-family: 'Rochester', cursive;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    h3 {
+        font-size: 28px;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    h4 {
+        font-size: 24px;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    p {
+        font-size: 22px;
+        padding: 0px;
+        margin: 0 0 1em 0;
+        line-height: 1.8em;
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-style: italic;
+    }
+    
+    a:hover {
+        font-weight: bold;
+    }
+    
+    figcaption {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 2em;
+        margin-top: 0.5em;
+        padding: 1em;
+        color: #fff;
+        background-color: rgba(77, 77, 77, 0.568);
+    }
+    
+    .button {
+        background-image: linear-gradient(to bottom right, #06c, #0cf);
+        color: #fff;
+        border-radius: 8px;
+        padding: 0.5em;
+        width: 30%;
+        font-size: 22px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .quote {
+        quotes: "„" "“" "‚" "‘";
+        font-family: 'Rochester', cursive;
+        font-size: 4em;
+        font-style: italic;
+        color: rgb(163, 189, 230);
+        text-align: center;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        grid-template-areas: "hd" "ct" "sb" "ft";
+        align-items: start;
+    }
+    
+    .header {
+        display: grid;
+        grid-area: hd;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "hl hl hr";
+        background-color: #06c;
+        color: #fff;
+        border-radius: 8px;
+    }
+    
+    .header-left {
+        grid-area: hl;
+        padding: 1em;
+    }
+    
+    .header-right {
+        grid-area: hr;
+        background-image: url("../img/paws.jpg");
+        background-repeat: repeat-x;
+        background-size: contain;
+        background-position: left;
+        border-radius: 8px;
+    }
+    
+    .content {
+        grid-area: ct;
+    }
+    
+    .footer {
+        grid-area: ft;
+        margin-bottom: 10px;
+    }
+    
+    @media(min-width: 1000px) and (max-width:1300px) {
+        h1 {
+            font-size: 50px;
+        }
+        h2 {
+            font-size: 33px;
+        }
+        h3,
+        p {
+            font-size: 16px;
+        }
+        h4 {
+            font-size: 13px;
+        }
+        figcaption {
+            font-size: 1em;
+        }
+        .button {
+            font-size: 16px;
+        }
+        .quote {
+            font-size: 2.1em;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            grid-template-areas: "hd hd hd" "ct ct sb" "ft ft ft";
+            align-items: start;
+        }
+        .blog-image {
+            height: 300px;
+        }
+        .side-image {
+            width: 150px;
+            height: 150px;
+        }
+        .sidebar-item {
+            font-size: 16px;
+        }
+    }
+    
+    @media(min-width: 1301px) {
+        body {
+            width: 70%;
+            margin: 0 auto;
+            /*positions the content of body to center horizontally*/
+        }
+        h1 {
+            font-size: 60px;
+        }
+        h2 {
+            font-size: 35px;
+        }
+        h3,
+        p {
+            font-size: 18px;
+            line-height: 1.4em;
+        }
+        h4 {
+            font-size: 15px;
+        }
+        figcaption {
+            font-size: 1em;
+        }
+        .button {
+            font-size: 18px;
+        }
+        .quote {
+            font-size: 2.5em;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            grid-template-areas: "hd hd hd" "ct ct sb" "ft ft ft";
+            align-items: start;
+        }
+        .header {
+            grid-template-areas: "hl hr hr";
+        }
+        .blog-image {
+            height: 440px;
+        }
+        .side-image {
+            width: 200px;
+            height: 200px;
+        }
+        .sidebar-item {
+            font-size: 18px;
+        }
+    }
